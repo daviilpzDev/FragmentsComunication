@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <Button
+            android:id="@+id/buttonGoku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goku"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFEB3B"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/buttonGohan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gohan"
+            android:layout_margin="10dp"
+            android:backgroundTint="#950A0A"
+            />
+
+        <Button
+            android:id="@+id/buttonVegetta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vegetta"
+            android:layout_margin="10dp"
+            android:backgroundTint="#673AB7" />
+
+
+        <Button
+            android:id="@+id/buttonPiccolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piccolo"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4CAF50"
+            />
+
+        <Button
+            android:id="@+id/buttonBills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bills"
+            android:layout_margin="10dp"
+            android:backgroundTint="#3F034A"
+            />
+
+        <Button
+            android:id="@+id/buttonBulma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bulma"
+            android:layout_margin="10dp"
+            android:backgroundTint="#03A9F4"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp"
+        android:name="com.example.fragmentscomunication.ImageFragment"
+        tools:layout="@layout/fragment_image"
+        ></androidx.fragment.app.FragmentContainerView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.fragmentscomunication.ButtonsFragment"
+        tools:layout="@layout/fragment_buttons"
+        ></androidx.fragment.app.FragmentContainerView>
+
+</LinearLayout>
