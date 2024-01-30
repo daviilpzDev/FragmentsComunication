@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="@drawable/fondopantalla">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentImage"
+        android:name="com.example.fragmentscomunication.ImageFragment"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_margin="20dp"
-        android:name="com.example.fragmentscomunication.ImageFragment"
-        tools:layout="@layout/fragment_image"
-        ></androidx.fragment.app.FragmentContainerView>
+        app:layout_constraintBottom_toTopOf="@+id/fragmentButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout="@layout/fragment_image"></androidx.fragment.app.FragmentContainerView>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentButtons"
+        android:name="com.example.fragmentscomunication.ButtonsFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:name="com.example.fragmentscomunication.ButtonsFragment"
-        tools:layout="@layout/fragment_buttons"
-        ></androidx.fragment.app.FragmentContainerView>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/fragment_buttons"></androidx.fragment.app.FragmentContainerView>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
